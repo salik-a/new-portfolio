@@ -110,9 +110,10 @@ export const EXPERIENCES: Experience[] = [
     color: '#30e8c9',
     achievements: [
       'Developed and maintained Setcard Flexlife from scratch with new features and store updates',
-      'Planned design and technical architecture for new version',
+      'Planned the design and technical architecture of a new version of Setcard Mobile and contributed to its development',
       'Actively developing Setcard SETPOS with NFC and QR payment integration',
     ],
+    tags: ['REACT-QUERY', 'TYPESCRIPT', 'REDUX', 'FIREBASE', 'REACT-NAVIGATION', 'JIRA', 'BITBUCKET'],
   },
   {
     company: 'MUNI',
@@ -123,29 +124,8 @@ export const EXPERIENCES: Experience[] = [
     achievements: [
       'Developed mobile app for Muni expense management platform',
       'Published app in App Store and Play Store',
-      'Wrote E2E tests with Detox for quality assurance',
     ],
-  },
-  {
-    company: 'PROSISTEM ELECTRONIC',
-    period: '2020 // INTERN',
-    role: 'Electronics Intern',
-    description: 'Designed PCB cards using Altium Designer. Observed design and build processes.',
-    color: '#a8e6cf',
-  },
-  {
-    company: 'DECATHLON',
-    period: '2019 - 2020 // SALES PERSON',
-    role: 'Sales Representative',
-    description: 'Product sales and promotion. Sales tracking and planning.',
-    color: '#ffd3b6',
-  },
-  {
-    company: 'BARIDA MACHINERY',
-    period: '2019 // INTERN',
-    role: 'Engineering Intern',
-    description: 'Observed engineers programming machines using PLC. Helped machine installation.',
-    color: '#ffaaa5',
+    tags: ['REACT NATIVE', 'JAVASCRIPT', 'REDUX', 'FIREBASE', 'REACT-NAVIGATION'],
   },
 ];
 

@@ -20,6 +20,7 @@ export interface Experience {
   description: string;
   color: string;
   achievements?: string[];
+  tags?: string[];
 }
 
 export interface Education {
