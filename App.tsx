@@ -42,17 +42,17 @@ const App: React.FC = () => {
               </a>
             ))}
             <a
-                href="/assets/Alper-Salik-Resume.pdf"
-                download
-                className="inline-block"
-              >
-            <ComicButton
-              variant="ink"
-              size="sm"
-              className="border-2 border-white shadow-[4px_4px_0px_0px_#30e8c9]"
+              href="/assets/Alper-Salik-Resume.pdf"
+              download
+              className="inline-block"
             >
-              GET CV
-            </ComicButton>
+              <ComicButton
+                variant="ink"
+                size="sm"
+                className="border-2 border-white shadow-[4px_4px_0px_0px_#30e8c9]"
+              >
+                GET CV
+              </ComicButton>
             </a>
           </div>
         </div>
@@ -78,9 +78,11 @@ const App: React.FC = () => {
             </h3>
 
             <p className="text-xl font-hand font-bold leading-relaxed">
-              <span className="bg-accent px-2">I'm a passionate mobile developer</span> with a knack for clean code and
-              intuitive user interfaces. I don't just write code; I create seamless experiences.
-             
+              <span className="bg-accent px-2">
+                I'm a passionate mobile developer
+              </span>{" "}
+              with a knack for clean code and intuitive user interfaces. I don't
+              just write code; I create seamless experiences.
             </p>
             <p className="text-xl font-hand font-bold leading-relaxed">
               Currently deploying code at{" "}
@@ -217,9 +219,9 @@ const App: React.FC = () => {
                       {exp.period}
                     </p>
                     {exp.achievements.map((achievement) => (
-                    <p className="font-hand font-bold text-lg mt-3">
-                      {achievement}
-                    </p>
+                      <p className="font-hand font-bold text-lg mt-3">
+                        {achievement}
+                      </p>
                     ))}
                     <div className="flex flex-wrap gap-2 pt-4">
                       {exp.tags.map((tag) => (
@@ -432,6 +434,29 @@ const App: React.FC = () => {
                       </span>
                     ))}
                   </div>
+
+                  <div className="flex gap-4 pt-4">
+                    <a
+                      href={project.appStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2  font-comic text-lg  transition-colors"
+                    >
+                      <ComicButton variant="accent" size="sm">
+                        App Store
+                      </ComicButton>
+                    </a>
+                    <a
+                      href={project.playStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 font-comic text-lg  transition-colors"
+                    >
+                      <ComicButton variant="accent" size="sm">
+                        Google Play
+                      </ComicButton>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -473,7 +498,6 @@ const App: React.FC = () => {
               >
                 EMAIL ME
               </ComicButton>
-            
             </div>
 
             <div className="flex justify-center gap-8">
