@@ -13,6 +13,7 @@ import {
 } from "./constants";
 
 const App: React.FC = () => {
+
   return (
     <div className="bg-gray-100 text-ink font-body antialiased selection:bg-accent selection:text-ink min-h-screen">
       {/* Navigation */}
@@ -23,7 +24,7 @@ const App: React.FC = () => {
             onClick={() => window.scrollTo(0, 0)}
           >
             <div
-              className="bg-white border-4 border-ink comic-shadow-sm flex-row flex items-center justify-center px-2 py-1 "
+              className="bg-white border-4 border-ink comic-shadow-sm flex-row flex items-center justify-center px-2 py-1 hover-shake"
             >
               <h1 className="text-3xl font-comic tracking-wider">
                 ALPER SALİK
@@ -44,7 +45,7 @@ const App: React.FC = () => {
             <div className="w-10 h-10 -translate-x-4" >
                 <Stickman
                   type="signaling"
-                  className="w-full h-full scale-120 "
+                  className="w-full h-full scale-120 animate-wiggle"
                 />
               </div>
           </div>
@@ -144,8 +145,8 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center order-1 lg:order-2 w-full">
-            <SpeechBubble className="mb-12 transform -rotate-3 px-8">
+          <div className="flex-1 flex flex-col items-center order-1 lg:order-2 w-full animate-bounce-in ">
+            <SpeechBubble className="mb-12 transform -rotate-3 px-8 ">
               CONST DEVELOPER = <span className="text-primary">TRUE</span>;
             </SpeechBubble>
             <img
@@ -181,7 +182,7 @@ const App: React.FC = () => {
                 </SpeechBubble>
                 <Stickman
                   type="thinking"
-                  className="w-full max-w-[180px] h-auto"
+                  className="w-full max-w-[180px] h-auto animate-float"
                 />
               </div>
             </div>
@@ -316,11 +317,11 @@ const App: React.FC = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-60 h-64 object-center transition-transform group-hover:scale-105 border-2 border-ink comic-shadow rounded-[16px]"
+                      className="w-60 h-64 object-center transition-transform hover-shake border-2 border-ink comic-shadow rounded-[16px]"
                     />
                   ) : (
                     <svg
-                      className="w-56 h-56 transition-transform group-hover:scale-105"
+                      className="w-56 h-56 transition-transform hover-shake"
                       viewBox="0 0 200 200"
                       fill="none"
                     >
@@ -428,7 +429,7 @@ const App: React.FC = () => {
             </SpeechBubble>
             <Stickman
               type="signaling"
-              className="w-full max-w-[200px] h-auto"
+              className="w-full max-w-[200px] h-auto hover-shake"
             />
           </div>
 
