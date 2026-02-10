@@ -131,7 +131,7 @@ export const EXPERIENCES: Experience[] = [
     description: 'Built and deployed mobile app for expense management platform.',
     color: '#ffdb58',
     achievements: [
-      'Developed mobile app for Muni expense management platform',
+      'Developed mobile app from scratch for Muni expense management platform',
       'Published app in App Store and Play Store',
     ],
     tags: ['REACT NATIVE', 'JAVASCRIPT', 'REDUX', 'FIREBASE', 'REACT-NAVIGATION'],
