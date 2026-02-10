@@ -151,7 +151,7 @@ const App: React.FC = () => {
             <img
               src="/assets/hero/heroImage.png"
               alt="Hero"
-              className="w-full max-w-[360px] h-auto drop-shadow-2xl"
+              className="w-full max-w-[340px] h-auto drop-shadow-2xl"
             />
           </div>
         </section>
@@ -316,11 +316,11 @@ const App: React.FC = () => {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-60 h-64 object-center transition-transform group-hover:scale-110 border-2 border-ink comic-shadow rounded-[16px]"
+                      className="w-60 h-64 object-center transition-transform group-hover:scale-105 border-2 border-ink comic-shadow rounded-[16px]"
                     />
                   ) : (
                     <svg
-                      className="w-56 h-56 transition-transform group-hover:scale-110"
+                      className="w-56 h-56 transition-transform group-hover:scale-105"
                       viewBox="0 0 200 200"
                       fill="none"
                     >
