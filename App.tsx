@@ -22,13 +22,13 @@ const App: React.FC = () => {
             className="flex items-center gap-2 group cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
           >
-            <div className="w-10 h-10 flex items-center justify-center">
-              <Stickman
-                type="signaling"
-                className="w-full h-full scale-125 translate-y-2"
-              />
+            <div
+              className="bg-white border-4 border-ink comic-shadow-sm flex-row flex items-center justify-center px-2 py-1 "
+            >
+              <h1 className="text-3xl font-comic tracking-wider">
+                ALPER SALİK
+              </h1>
             </div>
-            <h1 className="text-3xl font-comic tracking-wider">ALPER SALIK</h1>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -41,19 +41,12 @@ const App: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <a
-              href="/assets/Alper-Salik-Resume.pdf"
-              download
-              className="inline-block"
-            >
-              <ComicButton
-                variant="ink"
-                size="sm"
-                className="border-2 border-white shadow-[4px_4px_0px_0px_#30e8c9]"
-              >
-                GET CV
-              </ComicButton>
-            </a>
+            <div className="w-10 h-10 -translate-x-4" >
+                <Stickman
+                  type="signaling"
+                  className="w-full h-full scale-120 "
+                />
+              </div>
           </div>
         </div>
       </nav>

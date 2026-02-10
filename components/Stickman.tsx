@@ -8,7 +8,7 @@ interface StickmanProps {
 
 export const Stickman: React.FC<StickmanProps> = ({ type, className = "" }) => {
   const strokeColor = "#000000";
-  const strokeWidth = 3.5;
+  const strokeWidth = 8;
 
   if (type === 'desk') {
     return (
