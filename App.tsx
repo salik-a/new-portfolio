@@ -413,7 +413,7 @@ const App: React.FC = () => {
                         Tech Stack
                       </p>
                       <p className="font-hand text-sm">
-                        {project.technologies}
+                        {Array.isArray(project.technologies) ? project.technologies.join(', ') : project.technologies}
                       </p>
                     </div>
                     <div>
@@ -424,11 +424,11 @@ const App: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex gap-4">
-                    {project.tags.map((tag) => (
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tag) => (
                       <span
                         key={tag}
-                        className="border-[3px] border-ink px-4 py-1 font-comic text-lg hover:bg-accent transition-colors"
+                        className="border-[2px] border-ink px-2 py-1 font-comic text-sm hover:bg-accent transition-colors rounded-sm"
                       >
                         {tag}
                       </span>
@@ -440,7 +440,7 @@ const App: React.FC = () => {
                       href={project.appStore}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2  font-comic text-lg  transition-colors"
+                      className="font-comic text-lg  transition-colors"
                     >
                       <ComicButton variant="accent" size="sm">
                         App Store
@@ -450,7 +450,7 @@ const App: React.FC = () => {
                       href={project.playStore}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 font-comic text-lg  transition-colors"
+                      className="px-2 font-comic text-lg  transition-colors"
                     >
                       <ComicButton variant="accent" size="sm">
                         Google Play
