@@ -11,6 +11,7 @@ export interface Project {
   features: string;
   appStore?: string;
   playStore?: string;
+  image?: string;
 }
 
 export interface Experience {

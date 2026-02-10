@@ -305,47 +305,55 @@ const App: React.FC = () => {
                 className="border-4 border-ink bg-white overflow-hidden comic-shadow group hover:-translate-y-2 transition-transform"
               >
                 <div
-                  className="border-b-4 border-ink h-72 flex items-center justify-center relative halftone-bg overflow-hidden"
+                  className="border-b-4 border-ink h-80 flex items-center justify-center relative halftone-bg overflow-hidden"
                   style={{ backgroundColor: `${project.color}33` }}
                 >
                   <div className="absolute top-4 left-4 bg-ink text-white font-comic text-xl px-4 py-1 transform -rotate-3 z-10">
                     {project.missionNumber}
                   </div>
 
-                  <svg
-                    className="w-56 h-56 transition-transform group-hover:scale-110"
-                    viewBox="0 0 200 200"
-                    fill="none"
-                  >
-                    <rect
-                      x="70"
-                      y="30"
-                      width="60"
-                      height="120"
-                      rx="8"
-                      stroke="black"
-                      strokeWidth="4"
-                      fill="white"
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-60 h-64 object-center transition-transform group-hover:scale-110 border-2 border-ink comic-shadow rounded-[16px]"
                     />
-                    <rect
-                      x="85"
-                      y="60"
-                      width="30"
-                      height="30"
-                      stroke="black"
-                      strokeWidth="4"
-                    />
-                    <path d="M85 60h10v10h-10z" fill="black" />
-                    <path d="M105 80h10v10h-10z" fill="black" />
-                    <path d="M85 80h10v10h-10z" fill={project.color} />
-                    <circle
-                      cx="100"
-                      cy="140"
-                      r="4"
-                      stroke="black"
-                      strokeWidth="4"
-                    />
-                  </svg>
+                  ) : (
+                    <svg
+                      className="w-56 h-56 transition-transform group-hover:scale-110"
+                      viewBox="0 0 200 200"
+                      fill="none"
+                    >
+                      <rect
+                        x="70"
+                        y="30"
+                        width="60"
+                        height="120"
+                        rx="8"
+                        stroke="black"
+                        strokeWidth="4"
+                        fill="white"
+                      />
+                      <rect
+                        x="85"
+                        y="60"
+                        width="30"
+                        height="30"
+                        stroke="black"
+                        strokeWidth="4"
+                      />
+                      <path d="M85 60h10v10h-10z" fill="black" />
+                      <path d="M105 80h10v10h-10z" fill="black" />
+                      <path d="M85 80h10v10h-10z" fill={project.color} />
+                      <circle
+                        cx="100"
+                        cy="140"
+                        r="4"
+                        stroke="black"
+                        strokeWidth="4"
+                      />
+                    </svg>
+                  )}
                 </div>
 
                 <div className="p-8 space-y-6">
