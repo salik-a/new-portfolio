@@ -161,7 +161,7 @@ const App: React.FC = () => {
           {/* Bio Section */}
           <section
             id="about"
-            className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow rotate-[0.5deg]"
+            className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow rotate-[0.5deg] scroll-mt-24"
           >
             <div className="absolute top-0 right-0 bg-ink text-white font-comic px-4 py-1 rotate-6 z-10">
               PAGE 02
@@ -187,13 +187,13 @@ const App: React.FC = () => {
             </div>
           </section>
 
-          {/* Chronicles Section */}
+          {/* History Section */}
           <section
             id="history"
-            className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow -rotate-[0.5deg]"
+            className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow -rotate-[0.5deg] scroll-mt-24"
           >
             <h2 className="text-5xl font-comic mb-10 underline decoration-primary decoration-8 underline-offset-8">
-              CHRONICLES
+              HISTORY
             </h2>
             <div className="space-y-10 relative">
               <div className="absolute left-6 top-0 bottom-0 w-1.5 bg-ink"></div>
@@ -236,7 +236,7 @@ const App: React.FC = () => {
         {/* Education Section */}
         <section
           id="academy"
-          className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow"
+          className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow scroll-mt-24"
         >
           <h2 className="text-5xl font-comic mb-10 underline decoration-primary decoration-8 underline-offset-8">
             ACADEMY
@@ -261,7 +261,7 @@ const App: React.FC = () => {
         {/* Skills Section */}
         <section
           id="skills"
-          className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow"
+          className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow scroll-mt-24"
         >
           <h2 className="text-5xl font-comic mb-10 underline decoration-accent decoration-8 underline-offset-8">
             POWER-UPS
@@ -294,7 +294,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-12">
+        <section id="projects" className="py-12 scroll-mt-12">
           <h2 className="text-7xl lg:text-8xl font-comic text-center mb-16 drop-shadow-lg transform -rotate-1">
             TOP MISSIONS
           </h2>
@@ -420,10 +420,10 @@ const App: React.FC = () => {
         {/* Contact Section */}
         <section
           id="contact"
-          className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-12 halftone-bg text-center space-y-12 comic-shadow"
+          className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-12 halftone-bg text-center space-y-12 comic-shadow scroll-mt-24"
         >
           <div className="flex flex-col items-center">
-            <SpeechBubble className="mb-8 transform rotate-2 px-12 text-2xl">
+            <SpeechBubble className="mb-4 transform rotate-2 px-12 text-2xl">
               HEY THERE! LET'S CONNECT!
             </SpeechBubble>
             <Stickman
@@ -431,10 +431,6 @@ const App: React.FC = () => {
               className="w-full max-w-[200px] h-auto"
             />
           </div>
-
-          <h2 className="text-6xl lg:text-8xl font-comic transform -rotate-1 tracking-wider">
-            THE SIGNAL IS UP!
-          </h2>
 
           <p className="text-2xl lg:text-3xl font-hand font-bold max-w-2xl mx-auto leading-relaxed">
             I'm currently scouting for new adventures. If you have a project
@@ -459,7 +455,7 @@ const App: React.FC = () => {
                 href="https://linkedin.com/in/alpersalik"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-16 h-16 bg-white border-4 border-ink flex items-center justify-center comic-shadow hover:translate-y-1 hover:shadow-none transition-all hover:bg-primary"
+                className="w-16 h-16 bg-primary border-4 border-ink flex items-center justify-center comic-shadow hover:translate-y-1 hover:shadow-none transition-all hover:bg-primary"
               >
                 <svg
                   className="w-10 h-10"
