@@ -319,84 +319,40 @@ const App: React.FC = () => {
                     {project.missionNumber}
                   </div>
 
-                  {project.iconType === "mobile" ? (
-                    <svg
-                      className="w-56 h-56 transition-transform group-hover:scale-110"
-                      viewBox="0 0 200 200"
-                      fill="none"
-                    >
-                      <rect
-                        x="70"
-                        y="30"
-                        width="60"
-                        height="120"
-                        rx="8"
-                        stroke="black"
-                        strokeWidth="4"
-                        fill="white"
-                      />
-                      <rect
-                        x="85"
-                        y="60"
-                        width="30"
-                        height="30"
-                        stroke="black"
-                        strokeWidth="4"
-                      />
-                      <path d="M85 60h10v10h-10z" fill="black" />
-                      <path d="M105 80h10v10h-10z" fill="black" />
-                      <path d="M85 80h10v10h-10z" fill={project.color} />
-                      <circle
-                        cx="100"
-                        cy="140"
-                        r="4"
-                        stroke="black"
-                        strokeWidth="4"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      className="w-56 h-56 transition-transform group-hover:scale-110"
-                      viewBox="0 0 200 200"
-                      fill="none"
-                    >
-                      <circle
-                        cx="60"
-                        cy="140"
-                        r="15"
-                        stroke="black"
-                        strokeWidth="4"
-                      />
-                      <circle
-                        cx="140"
-                        cy="140"
-                        r="15"
-                        stroke="black"
-                        strokeWidth="4"
-                      />
-                      <path
-                        d="M60 140 L90 100 H130 L140 140"
-                        stroke="black"
-                        strokeWidth="4"
-                      />
-                      <path
-                        d="M90 100 L80 60 H50"
-                        stroke="black"
-                        strokeWidth="4"
-                      />
-                      <rect
-                        x="110"
-                        y="80"
-                        width="30"
-                        height="20"
-                        fill={project.color}
-                        stroke="black"
-                        strokeWidth="3"
-                      />
-                      <path d="M30 130 H10" stroke="black" strokeWidth="2.5" />
-                      <path d="M30 140 H15" stroke="black" strokeWidth="2.5" />
-                    </svg>
-                  )}
+                  <svg
+                    className="w-56 h-56 transition-transform group-hover:scale-110"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                  >
+                    <rect
+                      x="70"
+                      y="30"
+                      width="60"
+                      height="120"
+                      rx="8"
+                      stroke="black"
+                      strokeWidth="4"
+                      fill="white"
+                    />
+                    <rect
+                      x="85"
+                      y="60"
+                      width="30"
+                      height="30"
+                      stroke="black"
+                      strokeWidth="4"
+                    />
+                    <path d="M85 60h10v10h-10z" fill="black" />
+                    <path d="M105 80h10v10h-10z" fill="black" />
+                    <path d="M85 80h10v10h-10z" fill={project.color} />
+                    <circle
+                      cx="100"
+                      cy="140"
+                      r="4"
+                      stroke="black"
+                      strokeWidth="4"
+                    />
+                  </svg>
                 </div>
 
                 <div className="p-8 space-y-6">
@@ -409,19 +365,16 @@ const App: React.FC = () => {
 
                   <div className="space-y-3 border-t-4 border-ink pt-4">
                     <div>
-                      <p className="font-comic text-sm text-gray-600 uppercase">
-                        Tech Stack
-                      </p>
-                      <p className="font-hand text-sm">
-                        {Array.isArray(project.technologies) ? project.technologies.join(', ') : project.technologies}
-                      </p>
-                    </div>
-                    <div>
-                      <p className="font-comic text-sm text-gray-600 uppercase">
+                      <p className="font-comic text-m text-gray-600 uppercase">
                         Features
                       </p>
-                      <p className="font-hand text-sm">{project.features}</p>
+                      <p className="font-hand text-m">{project.features}</p>
                     </div>
+                  </div>
+                  <div>
+                    <p className="font-comic text-m text-gray-600 uppercase">
+                      Tech Stack
+                    </p>
                   </div>
 
                   <div className="flex flex-wrap gap-2">

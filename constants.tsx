@@ -57,7 +57,7 @@ export const PROJECTS: Project[] = [
     description: 'Expense management platform with bill scanning and expense analytics.',
     tags: ['REACT NATIVE', 'DETOX', 'SWIFT'],
     color: '#a8e6cf',
-    iconType: 'delivery',
+    iconType: 'mobile',
     technologies: ['React-Native', 'Redux', 'React Navigation', 'Axios', 'Swift', 'Detox'],
     features: 'Users can manage their expenses, they can scan bills and managers can see the expenses.',
     appStore: 'https://apps.apple.com/us/app/muni-spend-management/id1599044212',
