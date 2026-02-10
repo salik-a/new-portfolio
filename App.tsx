@@ -196,7 +196,7 @@ const App: React.FC = () => {
 
           {/* Chronicles Section */}
           <section
-            id="experience"
+            id="history"
             className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow -rotate-[0.5deg]"
           >
             <h2 className="text-5xl font-comic mb-10 underline decoration-primary decoration-8 underline-offset-8">
@@ -242,11 +242,11 @@ const App: React.FC = () => {
 
         {/* Education Section */}
         <section
-          id="education"
+          id="academy"
           className="border-4 border-ink bg-white relative overflow-hidden irregular-border p-8 halftone-bg comic-shadow"
         >
           <h2 className="text-5xl font-comic mb-10 underline decoration-primary decoration-8 underline-offset-8">
-            ACADEMY ARCHIVES
+            ACADEMY
           </h2>
           <div className="space-y-6">
             {EDUCATION.map((edu, idx) => (

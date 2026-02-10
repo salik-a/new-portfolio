@@ -7,7 +7,7 @@ export interface Project {
   tags: string[];
   color: string;
   iconType: 'mobile' | 'delivery';
-  technologies: string;
+  technologies: string[];
   features: string;
   appStore?: string;
   playStore?: string;

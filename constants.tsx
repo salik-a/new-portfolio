@@ -1,10 +1,10 @@
 
-import React from 'react';
 import { Project, Experience, NavItem, Education, Skill, Contact } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'STORY', href: '#about', font: 'marker' },
-  { label: 'LOGS', href: '#experience', font: 'marker' },
+  { label: 'STORY', href: '#', font: 'marker' },
+  { label: 'HISTORY', href: '#history', font: 'marker' },
+  { label: 'ACADEMY', href: '#academy', font: 'marker' },
   { label: 'SKILLS', href: '#skills', font: 'marker' },
   { label: 'MISSIONS', href: '#projects', font: 'marker' },
   { label: 'CALL', href: '#contact', font: 'marker' },
