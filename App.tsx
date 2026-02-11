@@ -88,7 +88,7 @@ const App: React.FC = () => {
 
             <div className="flex flex-wrap gap-6 pt-4">
               <a
-                href="/assets/Alper-Salik-Resume.pdf"
+                href={`${import.meta.env.BASE_URL}assets/Alper-Salik-Resume.pdf`}
                 download
                 className="inline-block"
               >
@@ -150,7 +150,7 @@ const App: React.FC = () => {
               CONST DEVELOPER = <span className="text-primary">TRUE</span>;
             </SpeechBubble>
             <img
-              src="/assets/hero/heroImage.png"
+              src={`${import.meta.env.BASE_URL}assets/hero/heroImage.png`}
               alt="Hero"
               className="w-full max-w-[340px] h-auto drop-shadow-2xl"
             />

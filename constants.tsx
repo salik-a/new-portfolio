@@ -23,7 +23,7 @@ export const PROJECTS: Project[] = [
     features: 'Users can buy coupons from different merchants like A101, Teknosa, Ikea. They can pay directly from a digital card in shops like Boyner, Mavi, Koton or they can use QR payment in markets and restaurants.',
     appStore: 'https://apps.apple.com/us/app/setcardflexlife/id1665163090',
     playStore: 'https://play.google.com/store/apps/details?id=com.setcard.flexlife',
-    image: '/assets/projects/flexlife.png',
+    image: `${import.meta.env.BASE_URL}assets/projects/flexlife.png`,
   },
   {
     id: 'p2',
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
     features: 'Users can pay with QR code. They can see their Setcard budget and transaction history.',
     appStore: 'https://apps.apple.com/us/app/setcard-mobil/id882408961',
     playStore: 'https://play.google.com/store/apps/details?id=com.setcard.nerede',
-    image: '/assets/projects/setcard.png',
+    image: `${import.meta.env.BASE_URL}assets/projects/setcard.png`,
   },
   {
     id: 'p3',
@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     features: 'Users can use their phones as pos device. They can get payment with QR code and Setcard payment card.',
     appStore: 'https://apps.apple.com/tr/app/setpos/id6468772962',
     playStore: 'https://play.google.com/store/apps/details?id=com.setcard.mobilpos',
-    image: '/assets/projects/setpos.png',
+    image: `${import.meta.env.BASE_URL}assets/projects/setpos.png`,
   },
   {
     id: 'p4',
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
     features: 'Users can manage their expenses, they can scan bills and managers can see the expenses.',
     appStore: 'https://apps.apple.com/us/app/muni-spend-management/id1599044212',
     playStore: 'https://play.google.com/store/apps/details?id=com.muni.mobile',
-    image: '/assets/projects/muni.png',
+    image: `${import.meta.env.BASE_URL}assets/projects/muni.png`,
   },
   {
     id: 'p5',
@@ -79,7 +79,7 @@ export const PROJECTS: Project[] = [
     features: 'Users can search and pick address from map and app calculates the amount of taxi prices.',
     appStore: 'https://apps.apple.com/tr/app/taksimmetre/id6739381918?l=tr',
     playStore: 'https://play.google.com/store/apps/details?id=com.taksimmetre',
-    image: '/assets/projects/taksimmetre.png',
+    image: `${import.meta.env.BASE_URL}assets/projects/taksimmetre.png`,
   },
   {
     id: 'p6',
@@ -93,7 +93,7 @@ export const PROJECTS: Project[] = [
     features: 'Shows the information of the episodes of the Rick and Morty series by calling the data with Axios from Api.',
     appStore: 'https://github.com/salik-a/Rick_Morty_App',
     playStore: 'https://github.com/salik-a/Rick_Morty_App',
-    image: '/assets/projects/rickmorty.png',
+    image: `${import.meta.env.BASE_URL}assets/projects/rickmorty.png`,
   },
   {
     id: 'p7',
@@ -106,7 +106,7 @@ export const PROJECTS: Project[] = [
     technologies: ['React-Native', 'Android Studio', 'Lottie Animation', 'Async Storage'],
     features: 'A React-Native ToDoApp using Lottie animation and Async Storage shared on Google Play.',
     playStore: 'https://play.google.com/store/apps/details?id=com.salika.todoapp',
-    image: '/assets/projects/todo.png',
+    image: `${import.meta.env.BASE_URL}assets/projects/todo.png`,
   },
 ];
 
