@@ -113,7 +113,7 @@ const App: React.FC = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/alper-salik/"
+                  href="https://www.linkedin.com/in/alper-salik?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
